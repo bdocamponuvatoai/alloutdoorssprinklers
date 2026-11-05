@@ -1,0 +1,33 @@
+/*
+ * Global stylesheet. ORDER MATTERS: partials are imported in the order their
+ * rules first appeared in the original single-file stylesheet, and each partial
+ * keeps its base rules first followed by its media blocks (1600px, 1100px,
+ * 800px, 520px, reduced motion). Re-ordering imports can change the cascade.
+ */
+@import "./base/tokens.css";
+@import "./base/base.css";
+@import "./components/section.css";
+@import "./components/typography.css";
+@import "./components/buttons.css";
+@import "./components/skip-link.css";
+@import "./layout/header.css";
+@import "./sections/home-intro.css";
+@import "./sections/hero-image.css";
+@import "./components/image-credit.css";
+@import "./sections/intro-strip.css";
+@import "./sections/services.css";
+@import "./sections/care-story.css";
+@import "./components/owner-line.css";
+@import "./sections/issue-finder.css";
+@import "./sections/garden-story.css";
+@import "./sections/process.css";
+@import "./sections/faq.css";
+@import "./sections/closing.css";
+@import "./layout/footer.css";
+@import "./sections/page-intro.css";
+@import "./pages/services.css";
+@import "./pages/service-detail.css";
+@import "./pages/sprinkler-help.css";
+@import "./pages/about.css";
+@import "./pages/contact.css";
+@import "./pages/privacy.css";

@@ -1,0 +1,10 @@
+.section {
+  padding-left: max(6%, calc((100% - 1280px) / 2));
+  padding-right: max(6%, calc((100% - 1280px) / 2));
+}
+@media (max-width: 520px) {
+  .section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}

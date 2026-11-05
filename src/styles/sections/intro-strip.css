@@ -1,0 +1,48 @@
+.intro-strip {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.intro-strip span:before {
+  content: "✳";
+  color: #6b8a38;
+  margin-right: 13px;
+  font-size: 15px;
+}
+@media (max-width: 1100px) {
+  .intro-strip {
+    font-size: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .intro-strip {
+    gap: 20px;
+    font-size: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .intro-strip span {
+    max-width: 150px;
+    line-height: 1.6;
+  }
+  .intro-strip span:before {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .intro-strip {
+    font-size: 7px;
+    letter-spacing: 0.05em;
+    gap: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .intro-strip span {
+    flex: 1;
+  }
+}

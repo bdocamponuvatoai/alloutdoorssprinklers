@@ -1,0 +1,29 @@
+.privacy-copy {
+  max-width: 1000px;
+  padding-bottom: 90px;
+}
+.privacy-copy h2 {
+  font-size: 27px;
+  margin: 35px 0 20px;
+}
+.privacy-copy p {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+@media (max-width: 800px) {
+  .privacy-copy {
+    max-width: none;
+  }
+}
+@media (max-width: 520px) {
+  .privacy-copy {
+    padding-bottom: 65px;
+  }
+  .privacy-copy h2 {
+    font-size: 25px;
+  }
+  .privacy-copy p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --ink: #233f35;
+  --muted: #5e6d62;
+  --paper: #fafbf7;
+  --lime: #d7ed95;
+  --sage: #edf1e7;
+  --line: #dce2d6;
+  --white: #fff;
+  --radius: 18px;
+  --font-body: var(--font-dm-sans), Arial, sans-serif;
+  --font-heading: var(--font-manrope), Arial, sans-serif;
+}

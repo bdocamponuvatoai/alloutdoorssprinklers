@@ -1,0 +1,16 @@
+.image-credit {
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  color: #fff;
+  font-size: 8px;
+  text-shadow: 0 1px 3px #0008;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 520px) {
+  .image-credit {
+    font-size: 7px;
+    right: 12px;
+    bottom: 9px;
+  }
+}

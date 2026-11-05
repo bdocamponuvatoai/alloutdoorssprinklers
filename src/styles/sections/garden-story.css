@@ -1,0 +1,82 @@
+.garden-story {
+  height: 670px;
+  position: relative;
+  overflow: hidden;
+  background: #34492b;
+}
+.garden-story > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+}
+.garden-story:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 34, 21, 0.8), rgba(15, 34, 21, 0.1) 80%);
+}
+.garden-story > div {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  max-width: 530px;
+  z-index: 1;
+}
+.garden-story h2 {
+  font-size: 62px;
+}
+.garden-story div > p:not(.eyebrow) {
+  font-size: 15px;
+  max-width: 330px;
+  margin: 23px 0 30px;
+  color: #f0f3eb;
+}
+.garden-story .image-credit {
+  z-index: 1;
+}
+@media (max-width: 800px) {
+  .garden-story {
+    height: 540px;
+  }
+  .garden-story > div {
+    left: 6%;
+    max-width: 450px;
+  }
+  .garden-story h2 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 520px) {
+  .garden-story {
+    height: 550px;
+  }
+  .garden-story > img {
+    object-position: 65% center;
+  }
+  .garden-story:after {
+    background: linear-gradient(90deg, #112717b0, #11271730);
+  }
+  .garden-story > div {
+    left: 7%;
+    right: 7%;
+    top: auto;
+    bottom: 65px;
+    transform: none;
+  }
+  .garden-story h2 {
+    font-size: 43px;
+  }
+  .garden-story div > p:not(.eyebrow) {
+    font-size: 13px;
+    max-width: 265px;
+    margin: 20px 0 24px;
+  }
+  .garden-story .button {
+    font-size: 12px;
+    padding: 16px 20px;
+    gap: 25px;
+  }
+}

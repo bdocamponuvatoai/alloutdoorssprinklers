@@ -1,0 +1,117 @@
+.site-footer {
+  background: var(--ink);
+  color: #e5eadf;
+  padding: 65px 6% 25px;
+}
+.brand-light {
+  color: #f8faf3;
+}
+.brand-light .brand-period {
+  color: var(--lime);
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.9fr 1.2fr;
+  gap: 45px;
+}
+.footer-top > div > p {
+  font-size: 12px;
+  margin-top: 23px;
+  color: #c0cbbd;
+  line-height: 1.8;
+}
+.footer-top h3 {
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0;
+  font-weight: 500;
+  margin: 8px 0 22px;
+  color: #f3f7ef;
+}
+.footer-top > div > a:not(:has(.brand)) {
+  display: block;
+  font-size: 11px;
+  color: #c0cbbd;
+  line-height: 2.6;
+  overflow-wrap: anywhere;
+}
+.footer-top > div > a:hover {
+  color: var(--lime);
+}
+.footer-top .footer-contact > a:first-of-type {
+  font-size: 21px;
+  letter-spacing: -0.03em;
+  color: #f3f7ef;
+}
+.footer-contact p span {
+  font-size: 10px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ffffff20;
+  padding-top: 24px;
+  margin-top: 55px;
+  font-size: 10px;
+  color: #bac7b7;
+}
+@media (max-width: 1100px) {
+  .footer-top {
+    grid-template-columns: 1.1fr 1fr 1fr;
+    gap: 32px;
+  }
+  .footer-contact {
+    grid-column: 2/4;
+  }
+}
+@media (max-width: 800px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .footer-top > div:first-child {
+    grid-column: 1/-1;
+  }
+  .footer-contact {
+    grid-column: auto;
+  }
+  .footer-top .footer-contact > a:first-of-type {
+    font-size: 18px;
+  }
+}
+@media (max-width: 520px) {
+  .site-footer {
+    padding: 50px 6% 24px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
+  .footer-contact {
+    grid-column: 1/-1;
+  }
+  .footer-top h3 {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .footer-top > div > a:not(:has(.brand)) {
+    font-size: 11px;
+  }
+  .footer-top .footer-contact > a:first-of-type {
+    font-size: 25px;
+  }
+  .footer-top > div > p {
+    font-size: 12px;
+    margin-top: 18px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 35px;
+    line-height: 1.5;
+    font-size: 9px;
+  }
+  .footer-bottom > span {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+.owner-line {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 38px;
+  border-top: 1px solid var(--line);
+  padding-top: 26px;
+}
+.owner-monogram {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  background: #e8eddf;
+}
+.owner-line strong {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+}
+.owner-line small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+@media (max-width: 800px) {
+  .owner-line {
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 22px;
+  }
+  .owner-line small {
+    font-size: 9px;
+  }
+  .owner-monogram {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 520px) {
+  .owner-line {
+    margin-top: 28px;
+  }
+  .owner-line strong {
+    font-size: 12px;
+  }
+  .owner-line small {
+    font-size: 10px;
+  }
+  .owner-monogram {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,76 @@
+.help-page {
+  padding-top: 15px;
+  padding-bottom: 85px;
+}
+.help-page .issue-finder {
+  padding: 50px;
+  background: var(--sage);
+  border-radius: var(--radius);
+}
+.call-note {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+  margin-top: 30px;
+}
+.call-note > svg {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.call-note h3 {
+  font-size: 20px;
+}
+.call-note p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.call-note > a {
+  margin-left: auto;
+  white-space: nowrap;
+}
+@media (max-width: 800px) {
+  .help-page .issue-finder {
+    padding: 30px;
+  }
+  .call-note {
+    flex-wrap: wrap;
+  }
+  .call-note > a {
+    margin-left: 52px;
+  }
+}
+@media (max-width: 520px) {
+  .help-page {
+    padding-top: 5px;
+    padding-bottom: 50px;
+  }
+  .help-page .issue-finder {
+    padding: 28px 22px;
+    border-radius: 12px;
+    gap: 32px;
+  }
+  .help-page .issue-answer {
+    min-height: 300px;
+  }
+  .call-note {
+    gap: 17px;
+    padding: 25px 0;
+  }
+  .call-note > div {
+    flex: 1;
+  }
+  .call-note h3 {
+    font-size: 20px;
+  }
+  .call-note p {
+    font-size: 12px;
+  }
+  .call-note > a {
+    margin-left: 47px;
+    font-size: 13px;
+  }
+}

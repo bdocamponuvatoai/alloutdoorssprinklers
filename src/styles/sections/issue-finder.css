@@ -1,0 +1,116 @@
+.help-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: var(--sage);
+}
+.issue-finder {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 9%;
+}
+.issue-options {
+  display: flex;
+  flex-direction: column;
+}
+.issue-options button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 22px 0;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #cdd5c5;
+  background: none;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+.issue-options button:first-child {
+  border-top: 1px solid #cdd5c5;
+}
+.selection-dot {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #8e9e85;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.issue-options button[aria-pressed="true"] .selection-dot {
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: 0 0 0 4px #d8e4ca;
+}
+.issue-options button[aria-pressed="true"] {
+  font-weight: 600;
+}
+.issue-plus {
+  margin-left: auto;
+  font-size: 22px;
+  font-weight: 400;
+}
+.issue-answer {
+  align-self: center;
+  max-width: 440px;
+}
+.issue-answer h3 {
+  font-size: 34px;
+  margin: 22px 0 20px;
+}
+.issue-answer p {
+  font-size: 14px;
+  color: #53644f;
+  margin-bottom: 20px;
+}
+.issue-answer small {
+  display: block;
+  font-size: 10px;
+  color: #617159;
+  margin-top: 23px;
+  line-height: 1.6;
+}
+@media (max-width: 800px) {
+  .help-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .issue-finder {
+    gap: 8%;
+    grid-template-columns: 1fr 1.05fr;
+  }
+  .issue-options button {
+    font-size: 15px;
+  }
+  .issue-answer h3 {
+    font-size: 28px;
+  }
+  .issue-answer p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 520px) {
+  .help-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .issue-finder {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .issue-options button {
+    padding: 18px 0;
+    font-size: 16px;
+  }
+  .issue-answer {
+    min-height: 260px;
+  }
+  .issue-answer h3 {
+    font-size: 29px;
+    max-width: 300px;
+    margin: 18px 0 16px;
+  }
+  .issue-answer p {
+    font-size: 13px;
+  }
+  .issue-answer small {
+    font-size: 9px;
+  }
+}

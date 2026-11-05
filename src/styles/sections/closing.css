@@ -1,0 +1,65 @@
+.closing {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: #dcebb9;
+  padding: 85px 6% 88px;
+}
+.closing h2 {
+  font-size: clamp(45px, 5.8vw, 84px);
+  position: relative;
+}
+.closing .eyebrow {
+  position: relative;
+}
+.closing-actions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+.closing-actions .text-link {
+  font-size: 11px;
+  border-color: #97aa7e;
+  min-height: 35px;
+}
+.closing-ring {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  left: -480px;
+  top: -230px;
+  border: 1px solid #afc88c;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 50px #dcebb9,
+    0 0 0 51px #afc88c,
+    0 0 0 101px #dcebb9,
+    0 0 0 102px #afc88c;
+  opacity: 0.5;
+}
+@media (max-width: 800px) {
+  .closing {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (max-width: 520px) {
+  .closing {
+    padding: 60px 6%;
+  }
+  .closing h2 {
+    font-size: clamp(38px, 10.5vw, 52px);
+  }
+  .closing .eyebrow {
+    font-size: 7px;
+  }
+  .closing-actions {
+    margin-top: 28px;
+  }
+  .closing-ring {
+    left: -590px;
+  }
+}

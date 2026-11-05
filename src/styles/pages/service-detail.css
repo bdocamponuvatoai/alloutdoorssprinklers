@@ -1,0 +1,229 @@
+.service-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 7%;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 85px;
+}
+.back-link {
+  font-size: 11px;
+  display: inline-block;
+  margin-bottom: 45px;
+}
+.service-intro h1 {
+  font-size: clamp(44px, 5.5vw, 78px);
+}
+.service-intro p:not(.eyebrow) {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 25px 0 30px;
+}
+.service-intro figure {
+  height: 610px;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.service-intro figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.service-intro figcaption {
+  position: absolute;
+  bottom: 13px;
+  right: 15px;
+  font-size: 8px;
+  color: #fff;
+  text-shadow: 0 1px 3px #000;
+}
+.service-details {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 8%;
+  background: var(--sage);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.service-details > div > p:not(.eyebrow) {
+  margin-top: 25px;
+  max-width: 370px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.service-details ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-self: center;
+}
+.service-details li {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 90px;
+  border-bottom: 1px solid #cbd4c3;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.service-details li:first-child {
+  border-top: 1px solid #cbd4c3;
+}
+.service-details li span {
+  font-size: 10px;
+  color: var(--muted);
+}
+.service-details li svg {
+  height: 24px;
+  width: 24px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.service-process {
+  padding-top: 85px;
+  padding-bottom: 95px;
+}
+.service-process ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  list-style: none;
+  padding: 0;
+  margin: 45px 0 0;
+}
+.service-process li > span {
+  font-size: 12px;
+  border: 1px solid var(--line);
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+.service-process li p {
+  font-size: 16px;
+  max-width: 310px;
+}
+@media (max-width: 1100px) {
+  .service-intro figure {
+    height: 520px;
+  }
+  .service-details li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .service-intro {
+    gap: 6%;
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
+  .service-intro h1 {
+    font-size: 45px;
+  }
+  .service-intro p:not(.eyebrow) {
+    font-size: 13px;
+  }
+  .service-intro figure {
+    height: 450px;
+  }
+  .service-intro .eyebrow {
+    font-size: 8px;
+  }
+  .service-intro .button {
+    padding: 16px;
+    gap: 20px;
+  }
+  .service-details {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .service-details h2 {
+    font-size: 43px;
+  }
+  .service-details > div > p:not(.eyebrow) {
+    max-width: 500px;
+  }
+  .service-details li {
+    min-height: 75px;
+  }
+  .service-process {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .service-process ol {
+    gap: 28px;
+  }
+  .service-process li p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 520px) {
+  .service-intro {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 15px;
+    padding-bottom: 55px;
+  }
+  .back-link {
+    margin-bottom: 28px;
+  }
+  .service-intro h1 {
+    font-size: 48px;
+  }
+  .service-intro p:not(.eyebrow) {
+    font-size: 14px;
+    margin: 22px 0;
+  }
+  .service-intro figure {
+    height: 390px;
+    border-radius: 12px;
+  }
+  .service-details {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .service-details h2 {
+    font-size: 39px;
+  }
+  .service-details li {
+    font-size: 15px;
+    gap: 15px;
+    padding: 18px 0;
+    min-height: 78px;
+  }
+  .service-details li svg {
+    width: 20px;
+    height: 20px;
+  }
+  .service-process {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .service-process h2 {
+    font-size: 38px;
+  }
+  .service-process ol {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  .service-process li {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--line);
+  }
+  .service-process li > span {
+    flex-shrink: 0;
+    margin: 0;
+  }
+  .service-process li p {
+    font-size: 15px;
+  }
+}
